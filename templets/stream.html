@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<form >
+{% for message in get_flashed_messages() %}
+
+ <div class="alert alert-warning alert-dismissible fade show" role="alert">
+         {{ message }}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+ <span aria-hidden="true">&times;</span>
+</button>
+</div>
+{% endfor %}
+
+
+   <h1 id="cont1">VIRTUAL PAINTER</h1>  
+   <i>VIRTUAL PAINTER</i>
+   <div class="background-img" id="main"> 
+       <img src=" https://www.citypng.com/public/uploads/preview/hd-cartoon-blue-brush-paint-with-paintbrush-png-31626635456pkrwundnoa.png ">
+
+       
+       
+       <a href="{{url_for('index')}}"> <button type="SUBMIT" class="button">STOP</button> </a> 
+       
+   </div>  
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-GLR4krWLlAoBfDgrIpBCV9n5WNWI1XATJmi4Fhnd6NFJa9gsu16W_eT0SugsvbmbVA&usqp=CAU" alt="" id="mainimg" style = "border:6px double #545565;">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFYWZAFFwZ3dVCYGgWanEs7ckQGwcKZI4TC1NN2YBEHvCRXxpJJjGdds5XBNmHfAJaycY&usqp=CAU" alt="" id="main1img">
+   <img src="{{ url_for('video') }}" alt="" 
+   id="main2img" style = "border:6px double #545565;">
+
+</form>
+
+{% endblock %}

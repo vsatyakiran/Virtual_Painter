@@ -1,0 +1,26 @@
+ {% extends 'base.html' %}
+
+ 
+
+ {% block content %}
+
+
+
+ <forms action = "url_for('index')" >
+
+    <h1 id="cont1">VIRTUAL PAINTER</h1>  
+    <i>VIRTUAL PAINTER</i>
+    <div class="background-img" id="main"> 
+        <img src=" https://www.citypng.com/public/uploads/preview/hd-cartoon-blue-brush-paint-with-paintbrush-png-31626635456pkrwundnoa.png ">
+
+        
+        <a href="{{url_for('video_dup')}}"> <button type="SUBMIT" class="button">START</button> </a> 
+        
+    </div>  
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-GLR4krWLlAoBfDgrIpBCV9n5WNWI1XATJmi4Fhnd6NFJa9gsu16W_eT0SugsvbmbVA&usqp=CAU" alt="" id="mainimg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFYWZAFFwZ3dVCYGgWanEs7ckQGwcKZI4TC1NN2YBEHvCRXxpJJjGdds5XBNmHfAJaycY&usqp=CAU" alt="" id="main1img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk_wpV0y___YBGvTVcBohJbG8XLiuLuhIlZGaewu_j_UWbpnjF5vseU3LTT_SzCbHBFzk&usqp=CAU" alt="" 
+    id="main2img">
+
+
+ {% endblock %}
